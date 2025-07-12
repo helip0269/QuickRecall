@@ -5,7 +5,7 @@ exports.createFlashcard = async (req, res) => {
   try {
     const { front, back } = req.body;
     const deckId = req.params.deckId;
-    const userId = req.user.id; // retrieved from auth middleware
+    const userId = req.user.id; 
 
     const newFlashcard = new Flashcard({
       front,

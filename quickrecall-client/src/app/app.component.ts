@@ -1,4 +1,4 @@
-// src/app/app.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule, NgIf } from '@angular/common';

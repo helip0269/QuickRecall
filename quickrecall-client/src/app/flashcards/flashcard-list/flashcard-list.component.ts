@@ -1,4 +1,4 @@
-// src/app/flashcards/flashcard-list/flashcard-list.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FlashcardService } from '../flashcard.service';

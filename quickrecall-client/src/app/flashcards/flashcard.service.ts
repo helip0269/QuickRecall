@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class FlashcardService {
-  private API = 'http://localhost:5000/api/flashcards';
+  private API = 'https://quickrecall-server.onrender.com';
 
   constructor(private http: HttpClient) {}
 
@@ -16,10 +16,10 @@ export class FlashcardService {
   }
 
   updateFlashcard(id: string, data: any) {
-    return this.http.put(`${this.API}/${id}`, data); // ✅ only flashcardId
+    return this.http.put(`${this.API}/${id}`, data); 
   }
 
   deleteFlashcard(id: string) {
-    return this.http.delete(`${this.API}/${id}`); // ✅ only flashcardId
+    return this.http.delete(`${this.API}/${id}`); 
   }
 }

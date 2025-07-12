@@ -1,10 +1,10 @@
-// src/app/decks/deck.service.ts
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class DeckService {
-  private API = 'http://localhost:5000/api/decks';
+  private API = 'https://quickrecall-server.onrender.com';
 
   constructor(private http: HttpClient) {}
 
