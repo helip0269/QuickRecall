@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  background-color: white;
+  background-image: radial-gradient(#ccc 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: Roboto, Arial, sans-serif;
+  width: 100%;
+}
+
+mat-form-field {
+  display: flex;
+  width: 100%;
+}
+
+.deck-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deckname {
+  color: #010101;
+}
+
+.deck-header h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.button1 {
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+
+  background-color: #7f91ff;
+  color: white;
+}
+
+mat-label {
+  color: #dbd4d8;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  
+}
+
+mat-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 12px;
+
+}
+
+.deck-page {
+  padding: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.deck-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 300px;
+}
+
+.deck-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 40px;
+  padding: 20px;
+  justify-items: center;
+}
+.deck-card {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+  background-color: #06233a;
+  box-shadow: 0 2px 6px rgba(225, 35, 35, 0.2);
+  text-align: center;
+  padding: 16px;
+}
+
+  mat-card-title, mat-card-subtitle, mat-card-content, button {
+    color: #dfe8e0;
+  }
+
+  .button2 {
+    color: rgb(131, 171, 237);
+  }
+
+.new-deck-form {
+  margin: 24 0;
+  max-width: 500px;
+  align-content: center;
+  display: g
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+
+@media (max-width: 1024px) {
+  .deck-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .deck-grid {
+    grid-template-columns: 1fr;
+  }
+}

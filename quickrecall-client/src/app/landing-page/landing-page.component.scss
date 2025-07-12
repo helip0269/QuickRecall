@@ -1,0 +1,20 @@
+.landing-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+}
+
+.landing-card {
+  padding: 32px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}

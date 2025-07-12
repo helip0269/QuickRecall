@@ -1,0 +1,11 @@
+<h2>{{ isEdit ? 'Edit' : 'Create' }} Flashcard</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>Question</label>
+  <input type="text" formControlName="question" />
+
+  <label>Answer</label>
+  <input type="text" formControlName="answer" />
+
+  <button type="submit">{{ isEdit ? 'Update' : 'Create' }}</button>
+</form>
+

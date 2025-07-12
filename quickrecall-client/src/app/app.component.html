@@ -1,0 +1,9 @@
+
+
+<mat-toolbar color="primary" *ngIf="auth.getToken()">
+  <span class="app-title">QuickRecall</span>
+  <span class="spacer"></span>
+  <button mat-button (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

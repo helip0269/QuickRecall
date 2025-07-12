@@ -1,0 +1,44 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  
+}
+
+mat-card {
+  width: 100%;
+  max-width: 400px;
+  
+}
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+   background-color: white;
+  background-image: radial-gradient(#ccc 1px, transparent 1px);
+background-size: 20px 20px;
+}
+
+.auth-card {
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.switch-link {
+  margin-top: 12px;
+  text-align: center;
+}

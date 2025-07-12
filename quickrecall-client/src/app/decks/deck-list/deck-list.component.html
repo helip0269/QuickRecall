@@ -1,0 +1,42 @@
+<!-- src/app/decks/deck-list/deck-list.component.html -->
+
+<div class="container">
+  <div class="deck-header"><h2>Your Decks</h2>
+
+  <!-- Toggle form button -->
+  <button class="button1" mat-fab color="primary" (click)="showCreateForm = !showCreateForm">+</button>
+</div>
+  <!-- Unified Create/Edit Form -->
+  <div *ngIf="showCreateForm || editingDeck" class="new-deck-form">
+    <form [formGroup]="form" (ngSubmit)="submitForm()" class="deck-form">
+      <mat-form-field class="outline1" appearance="outline">
+        <mat-label class="deckname">Deck Name</mat-label>
+        <input matInput formControlName="name" class="black" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label class="deckname">Description</mat-label>
+        <input matInput formControlName="description"/>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">
+        {{ editingDeck ? 'Update Deck' : 'Create Deck' }}
+      </button>
+      <button mat-button type="button" (click)="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+
+  
+</div>
+<!-- Deck Cards Grid -->
+  <div class="deck-grid">
+    <mat-card *ngFor="let deck of decks" class="deck-card">
+      <mat-card-title>{{ deck.name }}</mat-card-title>
+      <mat-card-content>{{ deck.description }}</mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="button2"  [routerLink]="['/decks', deck._id, 'flashcards']">Open</button>
+        <button mat-button class="button2" (click)="editDeck(deck)">Edit</button>
+        <button mat-button class="button2"(click)="deleteDeck(deck._id)">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
