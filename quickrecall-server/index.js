@@ -15,9 +15,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 
 // MongoDB connection
-mongoose.connect('mongodb://127.0.0.1:27017/quickrecall', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect('process.env.MONGODB_URI', {
 })
 .then(() => {
   console.log('Connected to MongoDB');
