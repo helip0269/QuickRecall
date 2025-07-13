@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class FlashcardService {
-  private API = 'https://quickrecall-server.onrender.com';
+  private API = 'https://quickrecall-server.onrender.com/api/flashcards';
 
   constructor(private http: HttpClient) {}
 

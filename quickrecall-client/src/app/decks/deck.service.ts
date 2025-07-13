@@ -1,15 +1,14 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class DeckService {
-  private API = 'https://quickrecall-server.onrender.com';
+  private API = 'https://quickrecall-server.onrender.com/api/decks';
 
   constructor(private http: HttpClient) {}
 
   createDeck(data: { name: string; description?: string }) {
-    return this.http.post(this.API, data); // use full API
+    return this.http.post(this.API, data);
   }
 
   getDecks() {
