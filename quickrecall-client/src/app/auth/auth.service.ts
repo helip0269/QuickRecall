@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AuthService {
-  private API_URL = 'https://quickrecall-server.onrender.com'; 
+  private API_URL = 'https://quickrecall-server.onrender.com/api/auth'; 
 
   constructor(private http: HttpClient) {}
 
